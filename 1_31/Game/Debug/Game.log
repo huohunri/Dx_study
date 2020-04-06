@@ -1,20 +1,20 @@
-﻿生成启动时间为 2020/4/6 14:09:58。
+﻿生成启动时间为 2020/4/6 21:14:32。
      1>项目“E:\Dx_study\1_31\Game\Game.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
-         G:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Game.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Game.cpp
-         Game.cpp
-     1>e:\dx_study\1_31\game\game.cpp(4): warning C4627: “#include <Windows.h>”:  在查找预编译头使用时跳过
+         G:\vs2013\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\Game.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt "Book Part II Code\Chapter 1\D3D9 Init\d3dInit.cpp" "Book Part II Code\Chapter 1\D3D9 Init\d3dUtility.cpp"
+         d3dUtility.cpp
+     1>e:\dx_study\1_31\game\book part ii code\chapter 1\d3d9 init\d3dutility.cpp(15): warning C4627: “#include "../Game/stdafx.h"”:  在查找预编译头使用时跳过
                  将指令添加到“stdafx.h”或重新生成预编译头
-     1>e:\dx_study\1_31\game\game.cpp(5): warning C4627: “#include <mmsystem.h>”:  在查找预编译头使用时跳过
+     1>e:\dx_study\1_31\game\book part ii code\chapter 1\d3d9 init\d3dutility.cpp(16): warning C4627: “#include "Book Part II Code/Chapter 1//D3D9 Init/d3dUtility.h"”:  在查找预编译头使用时跳过
                  将指令添加到“stdafx.h”或重新生成预编译头
-     1>e:\dx_study\1_31\game\game.cpp(390): warning C4018: “<”: 有符号/无符号不匹配
-       Link:
-         G:\vs2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Dx_study\1_31\Debug\Game.exe" /INCREMENTAL /NOLOGO d3d9.lib d3dx10d.lib d3dx9d.lib dxerr.lib dxguid.lib winmm.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Dx_study\1_31\Debug\Game.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Dx_study\1_31\Debug\Game.lib" /MACHINE:X86 Debug\Game.res
-         Debug\Game.obj
-         Debug\stdafx.obj
-         Game.vcxproj -> E:\Dx_study\1_31\Debug\Game.exe
-     1>已完成生成项目“E:\Dx_study\1_31\Game\Game.vcxproj”(Build 个目标)的操作。
+     1>e:\dx_study\1_31\game\book part ii code\chapter 1\d3d9 init\d3dutility.cpp(170): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         d3dInit.cpp
+     1>e:\dx_study\1_31\game\book part ii code\chapter 1\d3d9 init\d3dinit.cpp(15): warning C4627: “#include <d3dUtility.h>”:  在查找预编译头使用时跳过
+                 将指令添加到“stdafx.h”或重新生成预编译头
+     1>e:\dx_study\1_31\game\book part ii code\chapter 1\d3d9 init\d3dinit.cpp(103): fatal error C1010: 在查找预编译头时遇到意外的文件结尾。是否忘记了向源中添加“#include "stdafx.h"”?
+         正在生成代码...
+     1>已完成生成项目“E:\Dx_study\1_31\Game\Game.vcxproj”(Build 个目标)的操作 - 失败。
 
-生成成功。
+生成失败。
 
-已用时间 00:00:02.01
+已用时间 00:00:00.53

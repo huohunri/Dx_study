@@ -30,12 +30,21 @@
     <ClInclude Include="Game.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Book Part II Code\Chapter 1\D3D9 Init\d3dUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Book Part II Code\Chapter 1\D3D9 Init\d3dInit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Book Part II Code\Chapter 1\D3D9 Init\d3dUtility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

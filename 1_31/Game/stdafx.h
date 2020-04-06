@@ -10,7 +10,7 @@
 #define WIN32_LEAN_AND_MEAN             //  从 Windows 头文件中排除极少使用的信息
 // Windows 头文件: 
 #include <windows.h>
-
+#include "./Book Part II Code/Chapter 1/D3D9 Init/d3dUtility.h"
 // C 运行时头文件
 #include <stdlib.h>
 #include <malloc.h>
