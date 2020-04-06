@@ -1,2 +1,0 @@
-# LeetCode
-as a leetcoder
