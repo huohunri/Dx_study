@@ -5,7 +5,7 @@
 #include <mmsystem.h>
 #include "stdafx.h"
 #include "Game.h"
-#include <d3dx9.h>
+//#include <d3dx9.h>
 #pragma warning( disable : 4996 ) // disable deprecated warning 
 #include <strsafe.h>
 #pragma warning( default : 4996 )
@@ -414,7 +414,7 @@ VOID SetupMatrices()
 
 }
 
-VOID Cleanup()
+VOID GameCleanup()
 {
 	if (g_pTexture != NULL)
 		g_pTexture->Release();
@@ -468,7 +468,7 @@ LRESULT WINAPI MsgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 	switch (msg)
 	{
 	case WM_DESTROY:
-		Cleanup();
+		GameCleanup();
 		PostQuitMessage(0);
 		return 0;
 	}
@@ -485,12 +485,12 @@ INT WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR, INT)
 	{
 		sizeof(WNDCLASSEX), CS_CLASSDC, MsgProc, 0L, 0L,
 		GetModuleHandle(NULL), NULL, NULL, NULL, NULL,
-		L"D3D Tutorial", NULL
+		"D3D Tutorial", NULL
 	};
 	RegisterClassEx(&wc);
 
 	// Create the application's window
-	HWND hWnd = CreateWindow(L"D3D Tutorial", L"D3D : Texture",
+	HWND hWnd = CreateWindow("D3D Tutorial", "D3D : Texture",
 		WS_OVERLAPPEDWINDOW, 100, 100, 700, 700,
 		NULL, NULL, wc.hInstance, NULL);
 
@@ -520,6 +520,6 @@ INT WINAPI wWinMain(HINSTANCE hInst, HINSTANCE, LPWSTR, INT)
 		}
 	}
 
-	UnregisterClass(L"D3D Tutorial", wc.hInstance);
+	UnregisterClass("D3D Tutorial", wc.hInstance);
 	return 0;
 }

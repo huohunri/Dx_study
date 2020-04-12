@@ -12,8 +12,10 @@
 
 
 
-#include "../Game/stdafx.h"
-#include "Book Part II Code/Chapter 1//D3D9 Init/d3dUtility.h"
+#include "stdafx.h"
+//#include "d3dUtility.h"
+#include <Mmsystem.h>
+#pragma comment(lib, "Winmm.lib")
 bool d3d::InitD3D(
 	HINSTANCE hInstance,
 	int width, int height,

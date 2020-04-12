@@ -11,8 +11,8 @@
 //       initialization code is in the d3dUtility.h/.cpp files.
 //          
 //////////////////////////////////////////////////////////////////////////////////////////////////
-
-#include <d3dUtility.h>
+#include "stdafx.h"
+//#include <d3dUtility.h>
 #include<windows.h>
 
 //
